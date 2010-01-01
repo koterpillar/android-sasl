@@ -45,7 +45,6 @@ import gnu.javax.crypto.sasl.ServerFactory;
 import java.security.AccessController;
 import java.security.PrivilegedAction;
 import java.security.Provider;
-import java.security.Security;
 import java.util.Set;
 
 public final class GnuSasl

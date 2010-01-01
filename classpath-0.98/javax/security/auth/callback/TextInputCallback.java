@@ -1,5 +1,6 @@
 /* TextInputCallback.java -- callbacks for user input.
    Copyright (C) 2003, Free Software Foundation, Inc.
+   Modified for Android (C) 2009, 2010 by Alexey Kotlyarov
 
 This file is part of GNU Classpath.
 

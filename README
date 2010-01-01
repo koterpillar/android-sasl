@@ -3,4 +3,4 @@ This is a SASL stack for Android platform, adapted from GNU Classpath source.
 As neither java nor javax namespace can be modified, javax.security.sasl has
 been moved to gnusasl.javax.security.sasl.
 
-Distributed under the terms of the GNU GPL (v2 or later at your choice). 
+Distributed under the terms of the GNU GPL (v2 or later at your choice).

@@ -1,5 +1,6 @@
 /* Whirlpool.java -- 
    Copyright (C) 2001, 2002, 2006 Free Software Foundation, Inc.
+   Modified for Android (C) 2009, 2010 by Alexey Kotlyarov
 
 This file is a part of GNU Classpath.
 
@@ -37,6 +38,8 @@ exception statement from your version.  */
 
 
 package gnu.java.security.hash;
+
+import gnu.java.lang.CPStringBuilder;
 
 import gnu.java.security.Registry;
 import gnu.java.security.util.Util;
@@ -123,6 +126,7 @@ public final class Whirlpool
 
   static
     {
+      long time = System.currentTimeMillis();
       int ROOT = 0x11D; // para. 2.1 [WHIRLPOOL]
       int i, r, j;
       long s1, s2, s4, s5, s8, s9, t;
@@ -167,6 +171,7 @@ public final class Whirlpool
                 ^ (T5[i++] & 0x0000000000FF0000L)
                 ^ (T6[i++] & 0x000000000000FF00L)
                 ^ (T7[i++] & 0x00000000000000FFL);
+      time = System.currentTimeMillis() - time;
     }
 
   /** Trivial 0-arguments constructor. */
