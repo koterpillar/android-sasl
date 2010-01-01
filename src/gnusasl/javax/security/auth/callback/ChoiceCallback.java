@@ -1,0 +1,1 @@
+../../../../../../classpath-0.98/javax/security/auth/callback/ChoiceCallback.java
